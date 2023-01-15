@@ -382,7 +382,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: gray;
+            background-color: #bad4b4;
             transition: 0.5s;
 
             i{
@@ -509,9 +509,9 @@ body{
 
     .burguer{
         cursor: pointer;
-        position: fixed;
+        position: relative;
         top: 15px;
-        left: 10px;
+        left: -220px;
         z-index: 2;
     }
 
