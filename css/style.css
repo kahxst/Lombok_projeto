@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: #eaece9;
+  overflow-x: hidden;
 }
 
 .linha {
@@ -20,7 +21,7 @@ body {
 }
 
 .header {
-  height: 918px;
+  height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,20 +32,20 @@ body {
   background-repeat: no-repeat;
 }
 .header .menu {
-  width: 100%;
+  margin-top: 10px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header .menu ul {
-  margin-right: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .header .menu ul li {
   list-style-type: none;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 .header .menu ul li a {
   text-decoration: none;
@@ -209,10 +210,10 @@ body {
 }
 .section2 .box-two .paragrafo {
   width: 70%;
-  height: 25vh;
 }
 .section2 .box-two .paragrafo p {
   font-family: "Dancing Script", cursive;
+  margin-bottom: 5px;
   font-size: 22px;
   letter-spacing: 1px;
   font-weight: 200;
@@ -311,22 +312,50 @@ body {
   justify-content: space-around;
   height: 50px;
 }
-.footer .box-two p {
-  font-size: 19px;
-  font-family: "Poppins", sans-serif;
-  color: rgb(46, 46, 46);
-  transition: 0.5s;
-  font-weight: 500;
+.footer .box-two ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
-.footer .box-two p:hover {
-  letter-spacing: 1px;
+.footer .box-two ul li {
+  list-style-type: none;
+}
+.footer .box-two ul li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  position: relative;
+  font-size: 18px;
+}
+.footer .box-two ul li a:hover {
+  color: #646464;
+}
+.footer .box-two ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: #9cc095;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+  text-shadow: 1px 1px black;
+}
+.footer .box-two ul li a:hover::after {
+  width: 100%;
+}
+
+.seta {
+  display: none;
 }
 
 @media (max-width: 480px) {
-  .header {
+  #header {
     height: 200px;
   }
-  .header .box {
+  #header .box {
     height: 200px;
     width: 400px;
     display: flex;
@@ -334,41 +363,41 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .header .box h1 {
+  #header .box h1 {
     font-size: 45px;
     font-family: "Raleway", sans-serif;
     color: rgb(88, 88, 88);
   }
-  .header .box h3 {
+  #header .box h3 {
     letter-spacing: 1px;
     font-family: "Poppin", sans-serif;
     font-weight: 400;
     margin-top: 1px;
     color: rgb(75, 75, 75);
   }
-  .header .box .linha {
+  #header .box .linha {
     height: 2px;
     width: 60px;
     background-color: rgb(88, 88, 88);
     margin-top: 2px;
   }
-  .header nav h1 {
+  #header nav h1 {
     display: none;
   }
-  .header .burguer div {
+  #header .burguer div {
     background-color: #104400;
     height: 3px;
     width: 25px;
     margin: 3px 0;
   }
-  .header .burguer {
+  #header .burguer {
     cursor: pointer;
     position: fixed;
     top: 15px;
     left: 10px;
     z-index: 2;
   }
-  .header .show {
+  #header .show {
     transform: translateX(-30%);
     z-index: 1;
   }
@@ -489,5 +518,105 @@ body {
   }
   .seta {
     display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .header {
+    height: 918px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/capa01.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .header .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .menu ul {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .menu ul li {
+    list-style-type: none;
+    padding-left: 15px;
+  }
+  .header .menu ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    position: relative;
+    font-size: 18px;
+  }
+  .header .menu ul li a:hover {
+    color: #ffffff;
+  }
+  .header .menu ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #9cc095;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+    text-shadow: 1px 1px black;
+  }
+  .header .menu ul li a:hover::after {
+    width: 100%;
+  }
+  .header .menu h1 {
+    margin-left: 35px;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+  }
+  .header .menu h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  .header .box {
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .box h1 {
+    font-size: 75px;
+    font-family: "Raleway", sans-serif;
+    color: rgb(88, 88, 88);
+  }
+  .header .box h3 {
+    letter-spacing: 1px;
+    font-family: "Poppin", sans-serif;
+    font-weight: 100;
+    margin-top: 15px;
+    color: gray;
+  }
+  .header .seta {
+    position: relative;
+    font-size: 50px;
+    color: rgba(128, 128, 128, 0.527);
+    top: -80px;
+    transition: 0.5s;
+    -webkit-animation: seta 1s infinite ease-in-out alternate;
+            animation: seta 1s infinite ease-in-out alternate;
+  }
+  @-webkit-keyframes seta {
+    to {
+      transform: translateY(25px);
+    }
+  }
+  @keyframes seta {
+    to {
+      transform: translateY(25px);
+    }
   }
 }/*# sourceMappingURL=style.css.map */
