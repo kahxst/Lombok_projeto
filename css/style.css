@@ -327,7 +327,7 @@ body {
     height: 200px;
   }
   .header .box {
-    height: 160px;
+    height: 200px;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -351,15 +351,6 @@ body {
     width: 60px;
     background-color: rgb(88, 88, 88);
     margin-top: 2px;
-  }
-  .header .seta {
-    position: relative;
-    font-size: 26px;
-    color: rgba(128, 128, 128, 0.527);
-    top: -18px;
-    transition: 0.5s;
-    -webkit-animation: seta 1s infinite ease-in-out alternate;
-            animation: seta 1s infinite ease-in-out alternate;
   }
   .header nav h1 {
     display: none;
@@ -460,5 +451,43 @@ body {
   .footer .box-two {
     flex-direction: column;
     height: 100%;
+  }
+  .footer .box-two ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+  }
+  .footer .box-two ul li {
+    list-style-type: none;
+  }
+  .footer .box-two ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    position: relative;
+    font-size: 18px;
+  }
+  .footer .box-two ul li a:hover {
+    color: #646464;
+  }
+  .footer .box-two ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #9cc095;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+    text-shadow: 1px 1px black;
+  }
+  .footer .box-two ul li a:hover::after {
+    width: 100%;
+  }
+  .seta {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
