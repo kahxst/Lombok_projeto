@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Oswald:wght@200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
     <header class="header" id="header">
@@ -49,7 +52,7 @@
     <section class="section1" id="articles">
 
         <div class="box">
-            <h1>LATEST ARTICLES</h1>
+            <h1 class="area">LATEST ARTICLES</h1>
             <div class="linha"></div>
         </div>
         <div class="box-container">
@@ -57,7 +60,7 @@
                 <div class="img"><img src="img/ft1.png" alt="" ></div>
                     
                     <div class="linha"></div>
-                    <p>How to use mindfullness <br> in your everdit life</p>
+                    <p>How to use <span class="tooltip" data-title=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio corporis tempore, rem voluptate eum. Animi consectetur sequi labore excepturi.">mindfullness</span>  <br> in your everdit life</p>
                 
             </div>
 
@@ -65,7 +68,7 @@
                 <div class="img"><img src="img/ft2.png" alt="" ></div>
                     
                     <div class="linha"></div>
-                    <p>What are the best walking <br>meditations</p>
+                    <p>What are the best <span class="tooltip" data-title=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio corporis tempore, rem voluptate eum. Animi consectetur sequi labore excepturi.">walking</span>  <br>meditations</p>
                 
             </div>
 
@@ -73,7 +76,7 @@
                 <div class="img"><img src="img/ft4.png" alt="" > </div>
                     
                     <div class="linha"></div>
-                    <p>How to go deep into the mind of hope</p>
+                    <p>How to go deep into the <span class="tooltip" data-title=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio corporis tempore, rem voluptate eum. Animi consectetur sequi labore excepturi.">mind </span> of hope</p>
                
             </div>
         </div>
@@ -82,14 +85,14 @@
 
     <section class="section2" id="about">
         <div class="box-container1" id="box-container1">
-            <img src="img/capa2.jpg" alt="">
+            <img  src="img/capa2.jpg" alt="">
         </div>
 
         <div class="box-container2" id="box-container2">
             <div></div>
             <div class="title">
-                <h1> ABOUT</h1>
-                <div class="linha"></div>
+                <h1 class="area"> ABOUT</h1>
+                <div class="linha" id="area"></div>
             </div>
             <div class="paragrafo">
                 <p>
@@ -103,15 +106,15 @@
       <section class="section3" id="subscribe">
         <div class="caixa">
             <div class="title">
-            <h1>SUBSCRIBE</h1>
-            <p>Sign-up to our newsletter</p>   
+            <h1 class="area">SUBSCRIBE</h1>
+            <p class="area">Sign-up to our newsletter</p>   
             </div>
 
-            <div class="inp">
+            <div class="inp" id="area">
                 <input type="text" name="" id="" placeholder="Your Email">
             </div>
 
-            <button><span>SUBMIT</span></button>
+            <button class="area"><span>SUBMIT</span></button>
         </div>
       </section>
 
@@ -134,7 +137,7 @@
             </div>
         </div>
         <div class="vazio"></div>
-        <div class="box-two">        
+        <div class="box-two" id="area">        
           <ul>
             <li> <a href="#about">About</a> </li>
             <li> <a href="#articles">articles</a> </li>

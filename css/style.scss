@@ -232,6 +232,40 @@ body{
     }
 
 }
+
+.tooltip {
+	text-decoration: underline;
+	color: #6a8366;
+    cursor: pointer;
+}
+
+
+.tooltip::after {
+	content: attr(data-title);
+	display: block;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transform: translate(0, 10px);
+	max-width: 200px;
+	font-size: 12px;
+	line-height: 1.3em;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+	background: #9cc095;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+
+.tooltip:hover::after {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0, 1px);
+	transition: all .2s ease;
+}
+
 }
 
 
@@ -454,6 +488,8 @@ body{
         .seta{
            display: none;
         }
+
+
         
 
 /////////////////RESPONSIVO
@@ -584,10 +620,10 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
+        align-items: cen"ter;
 
         .box{
-         margin-bottom: 50px;
+         margin-bottom: 65px;
 
       
         } 
@@ -703,6 +739,11 @@ body{
 }
 
 
+.tooltip::after {
+	max-width: 200px;
+	line-height: 1.0em;
+}
+
 
 }
 
@@ -716,7 +757,7 @@ body{
 
 
 
-@media screen and (min-width:480px) and (max-width:768px) {
+@media screen and (min-width:481px) and (max-width:768px) {
 
 .header{
     width: 100%;
@@ -773,33 +814,48 @@ body{
      
     }
 
+}/////section2
+.section2{
+    //  border: 9px solid #00ff37;
+    height: 115vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    .box-one img{
+        width: 100%;
+    }
+
 }
 }
-/////////section2
-
-// .section2{
-//     //  border: 9px solid #00ff37;
-//     height: 115vh;
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-
-
-//     .box-one img{
-//         width: 100%;
-//     }
 
 
 
-// ///////////////section3
-// .section3{
-//     background-color: red;
 
-//     .caixa{
-//         background-color: blue;
-//     }
-// }
 
+
+
+
+
+
+
+
+
+@media screen and (min-width:769px) and (max-width:1280px){
+
+    .section2 .box-container1 img {
+       width: 100%;
+    }
+
+    .section2 .box-container2 {
+        width: 50%;
+    }
+
+    .header{
+        height: 618px;
+    }
+}
 
  
     

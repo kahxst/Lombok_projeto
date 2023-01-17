@@ -11,3 +11,14 @@ burguer.addEventListener('click', function(){
     linha3.classList.toggle('linha3');
 
 })
+
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal('.box',{duration:1500});
+sr.reveal('.area',{duration:1500});
+sr.reveal('#area',{duration:1500});
+sr.reveal('#img',{duration:1500});
+sr.reveal('.box-container1',{duration:1500});
+sr.reveal('.paragrafo',{duration:1500});
+
+
