@@ -495,7 +495,9 @@ body{
 /////////////////RESPONSIVO
 
 
-@media(max-width:480px){
+
+
+@media screen and (max-width:480px){
 
 
     #header{
@@ -620,7 +622,7 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: cen"ter;
+        align-items: center;
 
         .box{
          margin-bottom: 65px;
@@ -855,6 +857,13 @@ body{
     .header{
         height: 618px;
     }
+}
+
+@media screen and (min-width:320px)and (max-width:475px) {
+   .header #burguer {
+       position: relative;
+       left: -175px;
+   }
 }
 
  

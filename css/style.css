@@ -384,7 +384,7 @@ body {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #header {
     height: 200px;
   }
@@ -619,5 +619,11 @@ body {
   }
   .header {
     height: 618px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 475px) {
+  .header #burguer {
+    position: relative;
+    left: -175px;
   }
 }/*# sourceMappingURL=style.css.map */
